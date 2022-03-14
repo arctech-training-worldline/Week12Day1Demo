@@ -1,0 +1,27 @@
+﻿@using AkshayPopulationServiceReference
+@model PopulationInfo
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>Males</th>
+        <th>Females</th>
+        <th>Others</th>
+        <th>Below 18</th>
+        <th>Above 65</th>
+    </tr>
+    <tr>
+        <td>@Model.Males</td>
+        <td>@Model.Females</td>
+        <td>@Model.Others</td>
+        <td>@Model.Below18</td>
+        <td>@Model.Above65</td>
+    </tr>
+</table>
